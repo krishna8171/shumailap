@@ -1,4 +1,4 @@
-"""Build deploy-client/ folder for Netlify Drop (~50MB, no heavy reels)."""
+"""Build deploy-client/ folder for Cloudflare Pages / Netlify (~100MB, no heavy reels)."""
 from __future__ import annotations
 
 import json
@@ -17,6 +17,11 @@ SKIP_DIR_NAMES = {
     ".git",
     "scripts",
     "deploy-client",
+    # local probe / working folders (not for production)
+    "_hdprobe",
+    "_probe",
+    "_probe2",
+    "_old",
 }
 
 
@@ -74,26 +79,26 @@ def main() -> None:
 
     # small guide inside package
     (OUT / "HOW-TO-OPEN.txt").write_text(
-        "SHUMAIL PORTFOLIO — deploy package for graphics / client team\n"
-        "============================================================\n"
+        "SHUMAIL PORTFOLIO — production package (Cloudflare Pages / Netlify)\n"
+        "================================================================\n"
         "\n"
-        "1) Upload this ENTIRE folder to https://app.netlify.com/drop\n"
-        "2) Open the HTTPS link Netlify gives you\n"
-        "3) Admin CMS: /admin/   user=admin   pass=shumail2026\n"
+        "Recommended: Cloudflare Pages connected to GitHub (see DEPLOY.md).\n"
+        "  Build command: (leave empty)\n"
+        "  Build output directory: deploy-client\n"
+        "\n"
+        "Quick drag-drop: https://app.netlify.com/drop  (upload this folder)\n"
+        "\n"
+        "Admin CMS: /admin/   user=admin   pass=shumail2026  (change after deploy)\n"
         "\n"
         "Local preview (on this PC):\n"
         "  python -m http.server 8765\n"
         "  open http://127.0.0.1:8765/\n"
         "\n"
-        "Hero (full-width, black bg, no over-zoom — object-fit contain):\n"
-        "  assets/hero/best-01.jpg … best-08.jpg  stills\n"
-        "  assets/hero/live-01.mp4 … live-04.mp4  short work clips (autoplay muted)\n"
-        "  Replace those files to change the top live showcase.\n"
-        "\n"
-        "Company logos: managed in Admin → Industries (logos only).\n"
+        "Hero: assets/hero/best-*.jpg stills + live-*.mp4 clips\n"
+        "Company logos: Admin → Industries\n"
         "Creatives grid: Admin → Creatives / data/gallery.json\n"
         "\n"
-        "Note: full canva/reels library is stripped for Netlify size;\n"
+        "Note: full canva/reels library is stripped for host size limits;\n"
         "hero live-*.mp4 clips stay in assets/hero/. Posters still show in grid.\n",
         encoding="utf-8",
     )

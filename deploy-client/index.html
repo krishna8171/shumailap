@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammed Shumail — Dubai-based Content Creator, Photographer & Videographer. Creating visuals that move people." />
+  <meta name="theme-color" content="#0d0d0d" />
+  <title>Shumail Ap | Content Creator · Photographer · Videographer</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo" aria-label="Shumail home">
+        <span class="logo-mark" data-cms="logoMark">S</span>
+        <span class="logo-text">Shumail<span class="logo-dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active" data-cms="nav.home">Home</a></li>
+        <li><a href="#services" data-cms="nav.services">Services</a></li>
+        <li><a href="#about" data-cms="nav.about">About me</a></li>
+        <li><a href="#industries" data-cms="nav.industries">Industries</a></li>
+        <li><a href="#portfolio" data-cms="nav.creatives">Creatives</a></li>
+        <li><a href="#process" data-cms="nav.process">Process</a></li>
+        <li><a href="#contact" data-cms="nav.contact">Contact me</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta" data-cms="nav.hire">Hire Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: Mashoor-style full-bleed cinematic video + overlay copy -->
+    <section class="hero hero--cinematic" id="home">
+      <div class="hero-bg" id="heroShowcase" aria-hidden="true">
+        <div class="hero-bg-videos" id="heroShowcaseSlides">
+          <!-- JS injects muted autoplay videos; first fallback poster -->
+          <video class="hero-bg-video is-active" muted playsinline loop autoplay preload="auto" poster="assets/hero/hd-01.jpg">
+            <source src="assets/hero/cine-01.mp4?v=hd4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-bg-shade" aria-hidden="true"></div>
+        <div class="hero-bg-grain" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-overlay">
+        <div class="hero-copy">
+          <p class="hero-greeting" data-cms="greeting">Hi, I am</p>
+          <h1 class="hero-name" data-cms="name">Muhammed Shumail</h1>
+          <div class="hero-roles" aria-live="polite">
+            <span class="hero-role is-active" data-cms="role">Content Creator</span>
+            <span class="hero-role">Photographer</span>
+            <span class="hero-role">Videographer</span>
+            <span class="hero-role">Creative Director</span>
+          </div>
+          <p class="hero-tagline" data-cms="tagline">Creating visuals that move people · Dubai</p>
+
+          <div class="socials hero-socials" aria-label="Social links">
+            <a href="https://instagram.com/shumail.ap" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="@shumail.ap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="http://linkedin.com/in/muhammed-shumail-231102297" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V23h-4v-6.5c0-1.55-.03-3.55-2.16-3.55-2.16 0-2.49 1.69-2.49 3.43V23h-4V8.5z"/></svg>
+            </a>
+            <a href="mailto:mudshumail@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            </a>
+            <a href="tel:+971508102437" aria-label="Phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.8 19.8 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" data-cms="hero.hire">Hire Me</a>
+            <a href="#portfolio" class="btn btn-outline" data-cms="hero.viewWork">View Work</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-num" data-count="7">07+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-count="1000">1000+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">30K</span>
+              <span class="stat-label">Social Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#services" class="hero-scroll" aria-label="Scroll to services">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-cms="sections.services.eyebrow">What I offer</p>
+          <h2 class="section-title"><span data-cms="sections.services.title">Services that </span><span class="accent" data-cms="sections.services.titleAccent">drive results</span></h2>
+          <p class="section-sub"><span data-cms="sections.services.sub">From concept to final cut — visuals built for brands, real estate, and campaigns that convert.</span></p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Drone Cinematography</h3>
+            <p>Aerial sequences that elevate property showcases, events, and brand films with cinematic motion.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3>Photography</h3>
+            <p>Commercial, lifestyle, and real estate stills crafted for premium brand presence and listings.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M10 9l5 3-5 3V9z"/></svg>
+            </div>
+            <h3>Videography</h3>
+            <p>Brand films, reels, and event coverage directed for emotion, clarity, and social performance.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+            </div>
+            <h3>Real Estate Marketing</h3>
+            <p>High-performing property visuals for luxury listings — walkthroughs, lifestyle, and launch assets.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M8 7h8M8 11h6"/></svg>
+            </div>
+            <h3>Video Editing</h3>
+            <p>Color grading, motion graphics, sound design — polished edits optimized for every platform.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Brand Storytelling</h3>
+            <p>Narratives that build trust and engagement — campaigns designed to move audiences and metrics.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="8" cy="10" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="10" r="1.5" fill="currentColor" stroke="none"/><circle cx="16" cy="10" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Social Media Content</h3>
+            <p>Platform-optimized reels, posts, and growth systems that build reach, engagement, and brand trust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-frame">
+            <img data-cms-media="about.image" src="assets/about-face.jpg" alt="Muhammed Shumail — portrait" loading="lazy" />
+          </div>
+          <div class="about-accent-card">
+            <strong data-cms="about.yearsCard">7+</strong>
+            <span data-cms="about.yearsCardLabel">Years crafting visuals that convert</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow" data-cms="sections.about.eyebrow">About me</p>
+          <h2 class="section-title">Capturing Stories.<br /><span class="accent">Creating Impact.</span></h2>
+          <p class="lead">
+            I'm Muhammed Shumail, a Dubai-based Content Creator, Photographer, and Videographer specializing in cinematic storytelling, social media content, real estate marketing, brand campaigns, and commercial photography.
+          </p>
+          <p>
+            With over 7 years of experience, I've helped brands, businesses, and individuals transform ideas into powerful visual experiences that drive engagement, build trust, and generate results.
+          </p>
+
+          <ul class="achievements" id="achievementsList">
+            <li>
+              <span class="ach-dot" aria-hidden="true"></span>
+              <div class="ach-body">
+                <strong class="ach-title">Creator of the Month</strong>
+                <span class="ach-desc">Revo Realty — July 2024 · standout creative output</span>
+              </div>
+            </li>
+            <li>
+              <span class="ach-dot" aria-hidden="true"></span>
+              <div class="ach-body">
+                <strong class="ach-title">100+ Real Estate Visual Projects</strong>
+                <span class="ach-desc">Luxury property marketing assets</span>
+              </div>
+            </li>
+            <li>
+              <span class="ach-dot" aria-hidden="true"></span>
+              <div class="ach-body">
+                <strong class="ach-title">Social Media Growth Expert</strong>
+                <span class="ach-desc">Managed &amp; scaled 8 Instagram accounts</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="client-row">
+            <span class="client-label" data-cms="about.clientsLabel">Trusted by</span>
+            <div class="client-pills">
+              <span>NEWIZZ Realty LLC</span>
+              <span>Revo Realty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES — Trusted Clients logo strip (Mashoor-style placement) -->
+    <section class="section industries industries--clients" id="industries">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow" data-cms="sections.industries.eyebrow">Partners</p>
+          <h2 class="section-title" data-cms="sections.industries.title">Trusted Clients</h2>
+          <p class="section-sub" data-cms="sections.industries.sub">Brands and companies that trust the craft.</p>
+        </div>
+      </div>
+      <div class="logo-strip logo-strip--clients" id="companiesGrid" aria-label="Trusted client logos">
+        <p class="gallery-loading muted">Loading…</p>
+      </div>
+    </section>
+
+    <!-- CREATIVES / PORTFOLIO -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-cms="sections.creatives.eyebrow">Creatives</p>
+          <h2 class="section-title"><span data-cms="sections.creatives.title">Selected </span><span class="accent" data-cms="sections.creatives.titleAccent">work</span></h2>
+          <p class="section-sub"><span data-cms="sections.creatives.sub">Selected photography, video and reel work.</span></p>
+          <p class="gallery-count muted" id="galleryCount"></p>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <p class="gallery-loading muted">Loading gallery…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-cms="sections.process.eyebrow">My creative process</p>
+          <h2 class="section-title"><span data-cms="sections.process.title">How it </span><span class="accent" data-cms="sections.process.titleAccent">works</span></h2>
+          <p class="section-sub"><span data-cms="sections.process.sub">A clear path from first conversation to content that performs.</span></p>
+        </div>
+
+        <ol class="process-steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>Discover</h3>
+            <p>Understanding brand identity, goals, target audience, and vision.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>Plan</h3>
+            <p>Creative direction, storyboarding, shot planning, and production strategy.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>Create</h3>
+            <p>Photography, videography, drone footage, and content production.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3>Enhance</h3>
+            <p>Professional editing, color grading, motion graphics, and sound design.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">05</span>
+            <h3>Deliver</h3>
+            <p>Platform-optimized content designed to maximize engagement and impact.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="section cta-banner">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow" data-cms="cta.eyebrow">Ready when you are</p>
+          <h2 data-cms="cta.title">Let’s connect and work together</h2>
+          <p data-cms="cta.text">Need reels, property films, events, or a full content system? Let’s build visuals that move people.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-lg" data-cms="cta.button">Start a Project</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow" data-cms="sections.contact.eyebrow">Contact</p>
+          <h2 class="section-title"><span data-cms="sections.contact.title">Let’s talk about your </span><span class="accent" data-cms="sections.contact.titleAccent">next vision</span></h2>
+          <p class="section-sub" data-cms="sections.contact.sub">Reach out for collaborations, brand campaigns, or real estate content partnerships.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+              </span>
+              <div>
+                <span class="label" data-cms="contact.emailLabel">Email</span>
+                <a href="mailto:mudshumail@gmail.com" data-cms="contact.email">mudshumail@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.8 19.8 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <div>
+                <span class="label" data-cms="contact.phoneLabel">Phone</span>
+                <a href="tel:+971508102437" data-cms="contact.phone">+971 50 810 2437</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <span class="label" data-cms="contact.locationLabel">Based in</span>
+                <span data-cms="contact.location">Dubai, UAE</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-socials">
+            <p class="follow-label" data-cms="contact.followLabel">Follow · Connect</p>
+            <div class="social-row" id="socialRow">
+              <a href="https://instagram.com/shumail.ap" target="_blank" rel="noopener noreferrer">Instagram · @shumail.ap</a>
+              <a href="http://linkedin.com/in/muhammed-shumail-231102297" target="_blank" rel="noopener noreferrer">LinkedIn · @muhammed-shumail</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>
+              <span data-cms="contact.formName">Name</span>
+              <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+            </label>
+            <label>
+              <span data-cms="contact.formEmail">Email</span>
+              <input type="email" name="email" placeholder="you@email.com" required autocomplete="email" />
+            </label>
+          </div>
+          <label>
+            <span data-cms="contact.formSubject">Subject</span>
+            <input type="text" name="subject" placeholder="Project type or brand" />
+          </label>
+          <label>
+            <span data-cms="contact.formMessage">Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-full" data-cms="contact.formButton">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">Shumail<span class="logo-dot">.</span></span>
+      </a>
+      <p>© <span id="year"></span> Muhammed Shumail. Creating visuals that move people.</p>
+      <a href="#top" class="back-top"><span data-cms="footer.backTop">Back to top ↑</span></a>
+    </div>
+  </footer>
+
+  <!-- Lightbox (end of body so it never overlaps section layout) -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img id="lightboxImg" alt="" hidden />
+    <video id="lightboxVideo" controls playsinline hidden></video>
+    <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Next">›</button>
+    <p class="lightbox-cap" id="lightboxCap"></p>
+  </div>
+
+  <script src="js/cms-schema.js"></script>
+  <script src="js/content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

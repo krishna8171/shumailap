@@ -1,0 +1,200 @@
+{
+  "companies": [
+    {
+      "id": "co01",
+      "title": "Revo",
+      "logo": "assets/canva/media/media_085_MAHMwsKDn2s.png",
+      "cat": "companies",
+      "section": "companies",
+      "work": [
+        {
+          "image": "assets/canva/media/media_048_MAHMplGf74E.jpg",
+          "type": "media",
+          "source": "known-brand"
+        }
+      ],
+      "workCount": 1
+    },
+    {
+      "id": "co02",
+      "title": "Nakshatra Gold & Diamonds",
+      "logo": "assets/canva/media/media_087_MAHMxAZwkWY.png",
+      "cat": "companies",
+      "section": "companies",
+      "work": [
+        {
+          "image": "assets/canva/video/video_047_a2a670c26469.jpg",
+          "type": "video",
+          "source": "layout-proximity",
+          "x": 3459.3,
+          "y": 527.1
+        },
+        {
+          "image": "assets/canva/media/media_044_MAHMpkLpBZA.jpg",
+          "type": "media",
+          "source": "known-brand"
+        }
+      ],
+      "workCount": 2
+    },
+    {
+      "id": "co03",
+      "title": "alhind Tours & Travels",
+      "logo": "assets/canva/media/media_086_MAHMwu8Sfzo.png",
+      "cat": "companies",
+      "section": "companies",
+      "work": [
+        {
+          "image": "assets/canva/video/video_080_4c230264c889.jpg",
+          "type": "video",
+          "source": "layout-proximity",
+          "x": 1903.1,
+          "y": 899.6
+        }
+      ],
+      "workCount": 1
+    },
+    {
+      "id": "co04",
+      "title": "Shobhika Weddings",
+      "logo": "assets/canva/media/media_088_MAHMxJKmBsk.png",
+      "cat": "companies",
+      "section": "companies",
+      "work": [
+        {
+          "image": "assets/canva/media/media_046_MAHMpkOVBdk.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr042"
+        },
+        {
+          "image": "assets/canva/media/media_019_MAHMpg1Z5-Y.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr043"
+        },
+        {
+          "image": "assets/canva/media/media_068_MAHMpsLYE4s.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr044"
+        },
+        {
+          "image": "assets/canva/video/video_101_7464c9f63f99.jpg",
+          "video": "assets/canva/reels/reel_256bba3131f35029.mp4",
+          "type": "video",
+          "source": "cat-weddings",
+          "fromCreative": "cr045"
+        },
+        {
+          "image": "assets/canva/video/video_074_62620b3f051f.jpg",
+          "video": "assets/canva/reels/reel_e14743cf60cb61b3.mp4",
+          "type": "video",
+          "source": "cat-weddings",
+          "fromCreative": "cr046"
+        },
+        {
+          "image": "assets/canva/media/media_073_MAHMptQUnMI.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr050"
+        },
+        {
+          "image": "assets/canva/media/media_093_MAHNSP4QHdA.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr051"
+        },
+        {
+          "image": "assets/canva/media/media_090_MAHNSCYn1OU.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr052"
+        },
+        {
+          "image": "assets/canva/video/video_039_bceabe0134ed.jpg",
+          "video": "assets/canva/reels/reel_773d23d146414a37.mp4",
+          "type": "video",
+          "source": "cat-weddings",
+          "fromCreative": "cr053"
+        },
+        {
+          "image": "assets/canva/media/media_080_MAHMpvNO6Qc.jpg",
+          "video": null,
+          "type": "media",
+          "source": "cat-weddings",
+          "fromCreative": "cr054"
+        },
+        {
+          "image": "assets/canva/video/video_044_b76e50afd76a.jpg",
+          "video": "assets/canva/reels/reel_240e7a544242e96e.mp4",
+          "type": "video",
+          "source": "cat-weddings",
+          "fromCreative": "cr055"
+        },
+        {
+          "image": "assets/canva/video/video_089_23571a18c047.jpg",
+          "video": "assets/canva/reels/reel_0ea4118f49b0315e.mp4",
+          "type": "video",
+          "source": "cat-weddings",
+          "fromCreative": "cr056"
+        },
+        {
+          "image": "assets/canva/video/video_071_541d09981370.jpg",
+          "video": "assets/canva/reels/reel_b044371f56cbd60a.mp4",
+          "type": "video",
+          "source": "cat-weddings",
+          "fromCreative": "cr057"
+        }
+      ],
+      "workCount": 13
+    },
+    {
+      "id": "co05",
+      "title": "Koukh al Shay",
+      "logo": "assets/canva/media/media_084_MAHMwgWnf0A.png",
+      "cat": "companies",
+      "section": "companies",
+      "work": [
+        {
+          "image": "assets/canva/video/video_060_5dba24c3c7fa.jpg",
+          "type": "video",
+          "source": "layout-proximity",
+          "x": 1903.1,
+          "y": 510.3
+        },
+        {
+          "image": "assets/canva/media/media_040_MAHMpjpcp-k.jpg",
+          "type": "media",
+          "source": "known-brand"
+        },
+        {
+          "image": "assets/canva/media/media_030_MAHMphoaiqQ.jpg",
+          "type": "media",
+          "source": "heuristic-food"
+        },
+        {
+          "image": "assets/canva/media/media_031_MAHMphu9dvs.jpg",
+          "type": "media",
+          "source": "heuristic-food"
+        }
+      ],
+      "workCount": 4
+    },
+    {
+      "id": "co06",
+      "title": "Al Bahja Al Daema",
+      "logo": "assets/canva/media/media_089_MAHMxUJPuHA.png",
+      "cat": "companies",
+      "section": "companies",
+      "work": [],
+      "workCount": 0
+    }
+  ]
+}

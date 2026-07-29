@@ -1,130 +1,109 @@
-# Deploy Shumail portfolio
+# Deploy on Cloudflare Pages (FREE)
 
-Use the production folder **`deploy-client`** (~100 MB, no heavy reels).  
-Full repo is on GitHub: https://github.com/krishna8171/sumailap
+This site is meant for **Cloudflare Pages free plan** — not Netlify.
+
+- GitHub repo: https://github.com/krishna8171/sumailap  
+- Upload folder: **`deploy-client`** (production files only)
 
 ---
 
-## Option A — Cloudflare Pages + GitHub (recommended)
+## One-time setup (about 5 minutes)
 
-Auto-deploys every time you push to `main`.
+### Step 1 — Cloudflare account (free)
 
-### 1. Open Cloudflare Pages
+1. Open **https://dash.cloudflare.com/sign-up**
+2. Create a free account (email is enough)
+3. Log in at **https://dash.cloudflare.com**
 
-1. Go to **https://dash.cloudflare.com**
-2. Sign up / log in (free plan is fine)
-3. In the left sidebar: **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
+### Step 2 — Create a Pages project from GitHub
 
-### 2. Connect the GitHub repo
+1. Left menu: **Workers & Pages**
+2. **Create** → **Pages** → **Connect to Git**
+3. Choose **GitHub** → **Authorize Cloudflare** if asked
+4. Select repository: **`krishna8171/sumailap`**
+5. Click **Begin setup**
 
-1. Choose **GitHub** and authorize Cloudflare if asked  
-2. Select repository: **`krishna8171/sumailap`**  
-3. Click **Begin setup**
-
-### 3. Build settings (important)
+### Step 3 — Settings (copy exactly)
 
 | Setting | Value |
 |--------|--------|
-| Project name | `sumailap` (or `shumail-portfolio`) |
+| Project name | `sumailap` |
 | Production branch | `main` |
 | Framework preset | **None** |
-| Build command | *(leave empty)* |
+| Build command | *(leave empty — no build)* |
 | Build output directory | **`deploy-client`** |
-| Root directory | *(leave empty / `/`)* |
 
-4. Click **Save and Deploy**
-5. Wait 1–3 minutes. Cloudflare shows a live URL, for example:
-   ```
-   https://sumailap.pages.dev
-   ```
+Then click **Save and Deploy**.
 
-### 4. After deploy works
+### Step 4 — Live URL
 
-| What | Link |
-|------|------|
-| Website | `https://YOUR-PROJECT.pages.dev/` |
-| Admin CMS | `https://YOUR-PROJECT.pages.dev/admin/` |
+When deploy finishes you get a free link:
 
-**Admin login (change after first login):**
+```
+https://sumailap.pages.dev
+```
 
-- Username: `admin`  
-- Password: `shumail2026`
+| What | URL |
+|------|-----|
+| Website | `https://sumailap.pages.dev/` |
+| Admin CMS | `https://sumailap.pages.dev/admin/` |
 
-### 5. Custom domain (optional)
+Admin (change after first login):
 
-In the Pages project → **Custom domains** → **Set up a custom domain**  
-(e.g. `portfolio.byshumail.com`). Cloudflare walks you through DNS.
+- User: `admin`
+- Pass: `shumail2026`
 
-### 6. Update the live site later
+---
 
-On your PC, after you change the website:
+## Update the live site later
+
+After you edit files on this PC:
 
 ```powershell
 cd C:\Users\admin\AGENTS\byshumail-portfolio
 python scripts\build_deploy_client.py
 git add -A
-git commit -m "Update site content"
+git commit -m "Update site"
 git push
 ```
 
-Cloudflare rebuilds automatically from GitHub.
+Cloudflare rebuilds from GitHub automatically (still free).
 
 ---
 
-## Option B — Netlify Drop (no Git, ~3 minutes)
+## Custom domain (optional, later)
 
-1. Open **https://app.netlify.com/drop**
-2. Drag the folder:
-   ```
-   C:\Users\admin\AGENTS\byshumail-portfolio\deploy-client
-   ```
-3. Use the HTTPS link Netlify gives you.
+Pages project → **Custom domains** → add e.g. `portfolio.byshumail.com`  
+Cloudflare free plan supports custom domains.
 
 ---
 
-## Option C — Temporary Cloudflare tunnel (same day only)
+## Why not the full repo root?
 
-Only for a short call. Link dies when you close the terminal.
+Some video files in the full project are larger than Cloudflare Pages free file limit (~25 MB).  
+`deploy-client` is the slim production package (hero clips + images, no heavy reels).
+
+Rebuild anytime:
+
+```powershell
+python scripts\build_deploy_client.py
+```
+
+---
+
+## Temporary preview only (not permanent hosting)
+
+If you need a link for a short call before Pages is ready:
 
 ```powershell
 cd C:\Users\admin\AGENTS\byshumail-portfolio
 python -m http.server 8765
 ```
 
-Other terminal (after installing [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/)):
+Then in another terminal (requires [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/)):
 
 ```powershell
 cloudflared tunnel --url http://127.0.0.1:8765
 ```
 
-Share the `https://....trycloudflare.com` URL.
-
----
-
-## Notes
-
-- Do **not** share `http://127.0.0.1:8765` — that only works on your computer.
-- Deploy from **`deploy-client`**, not the full repo. Full repo has large reels (some over Cloudflare’s ~25 MB free file limit).
-- Rebuild after content edits:
-  ```powershell
-  python scripts\build_deploy_client.py
-  ```
-- Hero live clips stay in `deploy-client/assets/hero/`. Full Canva reels are stripped.
-
-### WhatsApp message you can copy
-
-```
-Hi — here’s the portfolio website preview:
-
-https://YOUR-PROJECT.pages.dev
-
-Works on phone and desktop.
-```
-
----
-
-## After the client likes it
-
-1. Change admin password in **Admin → Settings**  
-2. Optional: connect a custom domain in Cloudflare Pages  
-3. Optional: re-add full reel videos via R2/CDN if needed  
+That temporary URL stops when you close the terminal. Use **Pages** for the real free site.
